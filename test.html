@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+    <div class="flex w-full h-screen px-2 py-4 box-border">
+        <div class="flex-1 overflow-hidden transition-all duration-500 mx-2 shadow-lg">
+          <img src="./img/Galaxy Business Digital Background.png" class="w-[200%] h-[calc(100%-10vh)] object-cover transition-all duration-500">
+          <span class="text-4xl block text-center h-[10vh] leading-[2.6]">CSS</span>
+        </div>
+        <div class="flex-1 overflow-hidden transition-all duration-500 mx-2 shadow-lg">
+          <img src="./img/Galaxy Business Digital Background.png" class="w-[200%] h-[calc(100%-10vh)] object-cover transition-all duration-500">
+          <span class="text-4xl block text-center h-[10vh] leading-[2.6]">Image</span>
+        </div>
+        <div class="flex-1 overflow-hidden transition-all duration-500 mx-2 shadow-lg">
+          <img src="./img/Galaxy Business Digital Background.png" class="w-[200%] h-[calc(100%-10vh)] object-cover transition-all duration-500">
+          <span class="text-4xl block text-center h-[10vh] leading-[2.6]">Hover</span>
+        </div>
+        <div class="flex-1 overflow-hidden transition-all duration-500 mx-2 shadow-lg">
+          <img src="./img/Galaxy Business Digital Background.png" class="w-[200%] h-[calc(100%-10vh)] object-cover transition-all duration-500">
+          <span class="text-4xl block text-center h-[10vh] leading-[2.6]">Effect</span>
+        </div>
+      </div>
+      
+      <style>
+        .flex-1:hover {
+          flex: 1 1 50%;
+        }
+        .flex-1:hover img {
+          width: 100%;
+          height: 100%;
+        }
+      </style>
+      
+</body>
+</html>
+
+<body class="m-0 p-0 bg-black pb-24">
+
+  <section id="contact" class="w-full h-full">
+    <header class="text-center my-10">
+      <h1 class="text-center mx-auto py-10 font-light text-[60px] text-white uppercase tracking-[0.375em]">Contact</h1>
+    </header>
+  
+    <div class="contact-wrapper flex flex-col lg:flex-row justify-between mx-auto p-5 max-w-[840px]">
+  
+      <!-- Contact Form -->
+      <form id="contact-form" class="form-horizontal w-full max-w-md font-sans font-normal text-white space-y-4">
+        
+        <div class="form-group">
+          <label for="name" class="sr-only">Name</label>
+          <input type="text" id="name" placeholder="NAME" name="name" required class="w-full bg-black text-white placeholder-white tracking-wider border border-gray-700 rounded p-2 focus:outline-none focus:ring-2 focus:ring-white">
+        </div>
+        
+        <div class="form-group">
+          <label for="email" class="sr-only">Email</label>
+          <input type="email" id="email" placeholder="EMAIL" name="email" required class="w-full bg-black text-white placeholder-white tracking-wider border border-gray-700 rounded p-2 focus:outline-none focus:ring-2 focus:ring-white">
+        </div>
+        
+        <div class="form-group">
+          <label for="message" class="sr-only">Message</label>
+          <textarea id="message" rows="10" placeholder="MESSAGE" name="message" required class="w-full bg-black text-white placeholder-white tracking-wider border border-gray-700 rounded p-2 focus:outline-none focus:ring-2 focus:ring-white"></textarea>
+        </div>
+        
+        <button id="submit" type="submit" class="w-full mt-4 h-[34px] bg-black text-white border border-white transition-transform duration-200 ease-in-out hover:bg-white hover:text-black focus:outline-none">
+          <span class="flex items-center justify-center space-x-2">
+            <i class="fa fa-paper-plane"></i>
+            <span class="font-bold text-xs tracking-wider">SEND</span>
+          </span>
+        </button>
+      </form>
+  
+      <!-- Direct Contact Information -->
+      <aside class="direct-contact-container mt-10 lg:mt-0 w-full max-w-md text-white">
+  
+        <ul class="space-y-4 pl-4">
+          <li class="flex items-center space-x-3">
+            <i class="fa fa-map-marker fa-2x text-gray-400"></i>
+            <span class="text-gray-400 tracking-widest">City, State</span>
+          </li>
+          <li class="flex items-center space-x-3">
+            <i class="fa fa-phone fa-2x text-gray-400"></i>
+            <span class="text-gray-400 tracking-widest"><a href="tel:1-212-555-5555" class="hover:text-white">(212) 555-2368</a></span>
+          </li>
+          <li class="flex items-center space-x-3">
+            <i class="fa fa-envelope fa-2x text-gray-400"></i>
+            <span class="text-gray-400 tracking-widest"><a href="mailto:hitmeup@gmail.com" class="hover:text-white">hitmeup@gmail.com</a></span>
+          </li>
+        </ul>
+  
+        <hr class="my-6 border-t border-gray-600">
+  
+        <!-- Social Media Links -->
+        <ul class="flex justify-center space-x-3">
+          <li><a href="#" class="w-14 h-14 flex items-center justify-center rounded-full bg-gray-800 hover:bg-white hover:text-black transition duration-200"><i class="fa fa-github text-white"></i></a></li>
+          <li><a href="#" class="w-14 h-14 flex items-center justify-center rounded-full bg-gray-800 hover:bg-white hover:text-black transition duration-200"><i class="fa fa-codepen text-white"></i></a></li>
+          <li><a href="#" class="w-14 h-14 flex items-center justify-center rounded-full bg-gray-800 hover:bg-white hover:text-black transition duration-200"><i class="fa fa-twitter text-white"></i></a></li>
+          <li><a href="#" class="w-14 h-14 flex items-center justify-center rounded-full bg-gray-800 hover:bg-white hover:text-black transition duration-200"><i class="fa fa-instagram text-white"></i></a></li>
+        </ul>
+  
+        <hr class="my-6 border-t border-gray-600">
+        
+        <footer class="text-center text-gray-500 tracking-widest text-sm">
+          &copy; ALL RIGHTS RESERVED
+        </footer>
+        
+      </aside>
+    </div>
+  </section>
+  </body>
+  
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q&A Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <header class="bg-gray-800 text-white py-4">
+        <h1 class="text-center text-2xl font-semibold">Q&A Blog</h1>
+    </header>
+
+    <main class="max-w-3xl mx-auto p-4">
+        <!-- Question and Answer Section -->
+        <section class="bg-white p-6 rounded-lg shadow-lg mb-6">
+            <h2 class="text-xl font-semibold text-gray-800">প্রশ্ন: কিভাবে একটি ব্লগ তৈরি করা যায়?</h2>
+            <p class="mt-4 text-gray-700">উত্তর: HTML এবং Tailwind CSS দিয়ে সহজে একটি ব্লগ তৈরি করা যায়।...</p>
+            <img src="path-to-image.jpg" alt="উত্তরের সাথে সম্পর্কিত ছবি" class="mt-4 rounded-lg w-full">
+        </section>
+
+        <section class="bg-white p-6 rounded-lg shadow-lg mb-6">
+            <h2 class="text-xl font-semibold text-gray-800">প্রশ্ন: ওয়েবসাইটে কীভাবে ছবি যুক্ত করা যায়?</h2>
+            <p class="mt-4 text-gray-700">উত্তর: HTML এর &lt;img&gt; ট্যাগ ব্যবহার করে ছবি যুক্ত করা যায়...</p>
+            <img src="path-to-image2.jpg" alt="উত্তরের সাথে সম্পর্কিত আরেকটি ছবি" class="mt-4 rounded-lg w-full">
+        </section>
+    </main>
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Section</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-white">
+
+    <!-- Section Container -->
+    <div class="p-8">
+        <!-- Main Heading -->
+        <h1 class="text-4xl font-bold mb-6">What is artificial intelligence (AI)?</h1>
+
+        <!-- Subheading with Content and Image -->
+        <div class="flex flex-col lg:flex-row items-start gap-6">
+            <!-- Text Content -->
+            <div class="flex-1">
+                <h2 class="text-3xl font-semibold mb-4">Image and voice recognitions</h2>
+                <p class="text-gray-300 mb-4">
+                    Perhaps the simplest way to think of AI is as technology that enables devices to perform tasks that require human-like cognition. Image and speech recognition are clear markers of such intelligence, and two areas where AI is rapidly advancing.
+                </p>
+                <p class="text-gray-300 mb-4">
+                    Image recognition systems are quickly becoming capable of not just recognizing objects and facial expressions, but also the context and nuance behind them. Some can even utilize this insight to generate completely new, ultra-realistic images.
+                </p>
+                <p class="text-gray-300">
+                    Speech recognition systems are leveraging deep learning to analyze billions of words, along with complex phrases and patterns of nuance, and enable intelligent assistant services to provide accurate responses.
+                </p>
+            </div>
+
+            <!-- Image Section -->
+            <div class="flex-1">
+                <div class="bg-blue-800 h-64 w-full rounded-lg flex items-center justify-center">
+                    <!-- Placeholder for image -->
+                    <div class="w-40 h-40 border-4 border-blue-500 rounded-full flex items-center justify-center">
+                        <span class="text-center text-blue-200">Image Placeholder</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <section class="max-w-2xl mx-auto p-4">
+        <details class="mb-4">
+            <summary class="cursor-pointer text-lg font-semibold">Question 1</summary>
+            <p class="mt-2 text-gray-600">Answer to question 1.</p>
+        </details>
+        <details class="mb-4">
+            <summary class="cursor-pointer text-lg font-semibold">Question 2</summary>
+            <p class="mt-2 text-gray-600">Answer to question 2.</p>
+        </details>
+        <details class="mb-4">
+            <summary class="cursor-pointer text-lg font-semibold">Question 3</summary>
+            <p class="mt-2 text-gray-600">Answer to question 3.</p>
+        </details>
+    </section>
+    
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sample Tailwind CSS Website</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Navbar -->
+  <header class="bg-white shadow">
+    <div class="container mx-auto flex justify-between items-center p-4">
+      <h1 class="text-2xl font-bold text-blue-600">My Website</h1>
+      <nav>
+        <ul class="flex space-x-4">
+          <li><a href="#home" class="hover:text-blue-600">Home</a></li>
+          <li><a href="#features" class="hover:text-blue-600">Features</a></li>
+          <li><a href="#services" class="hover:text-blue-600">Services</a></li>
+          <li><a href="#contact" class="hover:text-blue-600">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="bg-blue-600 text-white py-16">
+    <div class="container mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-4">Welcome to My Website</h2>
+      <p class="text-lg mb-6">Build amazing web experiences with simplicity and power.</p>
+      <a href="#features" class="bg-white text-blue-600 px-6 py-3 rounded-full font-semibold hover:bg-gray-100">Explore More</a>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="py-16">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-8">Features</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <div class="bg-white shadow p-6 rounded-lg">
+          <h3 class="text-xl font-semibold mb-2">Feature One</h3>
+          <p>Discover the simplicity of powerful tools for modern web development.</p>
+        </div>
+        <div class="bg-white shadow p-6 rounded-lg">
+          <h3 class="text-xl font-semibold mb-2">Feature Two</h3>
+          <p>Responsive design for all devices with seamless user experience.</p>
+        </div>
+        <div class="bg-white shadow p-6 rounded-lg">
+          <h3 class="text-xl font-semibold mb-2">Feature Three</h3>
+          <p>Customizable components tailored to your unique needs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="bg-gray-100 py-16">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-8">Our Services</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+        <div class="p-6 bg-white shadow rounded-lg">
+          <h3 class="text-xl font-semibold mb-2">Web Design</h3>
+          <p>Create visually stunning websites that engage your audience.</p>
+        </div>
+        <div class="p-6 bg-white shadow rounded-lg">
+          <h3 class="text-xl font-semibold mb-2">SEO Optimization</h3>
+          <p>Boost your online presence and reach your audience effectively.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-8">Contact Us</h2>
+      <form action="#" class="max-w-lg mx-auto bg-white shadow p-6 rounded-lg">
+        <div class="mb-4">
+          <label for="name" class="block text-sm font-medium">Name</label>
+          <input type="text" id="name" class="w-full mt-1 p-2 border rounded-lg">
+        </div>
+        <div class="mb-4">
+          <label for="email" class="block text-sm font-medium">Email</label>
+          <input type="email" id="email" class="w-full mt-1 p-2 border rounded-lg">
+        </div>
+        <div class="mb-4">
+          <label for="message" class="block text-sm font-medium">Message</label>
+          <textarea id="message" rows="4" class="w-full mt-1 p-2 border rounded-lg"></textarea>
+        </div>
+        <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-4">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2024 My Website. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gradient Background</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+  <section class="h-screen flex items-center justify-center">
+    <div class="w-full h-96 bg-gradient-to-r from-blue-500 via-pink-500 to-purple-500 rounded-lg shadow-lg flex items-center justify-center">
+      <h1 class="text-white text-4xl font-bold">Beautiful Gradient</h1>
+    </div>
+  </section>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
